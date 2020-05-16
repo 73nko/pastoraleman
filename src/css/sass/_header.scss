@@ -45,7 +45,30 @@
       display: inline-flex;
       font-weight: bolder;
       :not(:last-child) {
-        margin-right: 1.5rem;
+        margin-right: 2rem;
+      }
+
+      li {
+        position: relative;
+      }
+
+      .active {
+        border-bottom: 1px solid currentColor;
+        &::before {
+          content: "";
+          position: absolute;
+          left: -1.3rem;
+          top: 1rem;
+          width: 1rem;
+          height: 1rem;
+          -webkit-mask-image: url("../img/solid/paw.svg");
+          mask-image: url("../img/solid/paw.svg");
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+          -webkit-mask-position: center;
+          mask-position: center;
+          background-color: currentColor;
+        }
       }
     }
 

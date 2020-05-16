@@ -20,7 +20,7 @@
       height: 3.5rem;
       -webkit-mask-image: url("../img/solid/paw.svg");
       mask-image: url("../img/solid/paw.svg");
-      background-color: $accent-color;
+      background-color: $secondary-text-color;
 
       @media only screen and (max-width: $bp-small) {
         visibility: hidden;
