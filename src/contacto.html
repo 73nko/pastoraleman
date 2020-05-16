@@ -32,7 +32,7 @@
     </div>
     <nav class="desktop">
       <ul>
-        <li><a href="/documentacion.html">Documentación</a></li>
+        <li><a href="/documentacion">Documentación</a></li>
         <li><a href="/galeria">Galería</a></li>
         <li><a href="/donde-estamos">Dónde Estamos</a></li>
         <li><a class="active" href="/contacto">Contacto</a></li>
@@ -56,7 +56,7 @@
             <a href="/galeria" class="navigation__link">Galería</a>
           </li>
           <li class="navigation__item">
-            <a class="active" href="/donde estamos" class="navigation__link">Dónde Estamos</a>
+            <a class="active" href="/donde-estamos" class="navigation__link">Dónde Estamos</a>
           </li>
           <li class="navigation__item">
             <a href="/contacto" class="navigation__link">Contacto</a>
@@ -69,8 +69,35 @@
     <h3 class="heading-3">
       Contacto
     </h3>
-    <p>Sí quieres ponerte en contacto con nosotros, puedes hacerlo por teléfono al: <b><a href="tel:695229204">TFNO
-          695229204</a></b></p>
+    <p>
+        Si quieres ponerte en contacto con nosotros, puedes hacerlo por teléfono al: <b><a href="tel:695229204">TFNO
+          695229204</a></b>
+    </p>
+
+    <p>
+        Si lo prefieres también puedes enviarnos un email con tus dudas a través de nuestro formulario de contacto:
+    </p>
+
+    <form 
+        name="contact" 
+        method="POST" 
+        data-netlify-recaptcha="true" 
+        data-netlify="true" 
+        action="/contacto.html#send"
+    >
+        <p>
+          <label>Tú nombre: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Mensaje: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Enviar Formulario</button>
+        </p>
+      </form>
   </main>
   <footer>
     <img class="numero-perrera" src="./img/numeroRSCE.png" alt="numero de oerrera deoirtiva cam" />
