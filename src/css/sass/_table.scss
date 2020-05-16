@@ -1,0 +1,37 @@
+.skills-table {
+  width: 100%;
+  td {
+    border: 1px solid $divider-color;
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    ul {
+      list-style: none;
+      li {
+        position: relative;
+        margin-left: 1rem;
+      }
+      li::before {
+        content: "";
+        position: absolute;
+        left: -1.5rem;
+        top: 0.5rem;
+        width: 1rem;
+        height: 1rem;
+        -webkit-mask-image: url("../img/solid/bone.svg");
+        mask-image: url("../img/solid/bone.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-color: $primary-color-dark;
+      }
+    }
+    strong {
+      font-family: $font-display;
+      font-weight: 700;
+    }
+    &:hover {
+      background-color: $primary-color-light;
+    }
+  }
+}

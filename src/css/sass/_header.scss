@@ -57,6 +57,7 @@
 
 .navigation {
   visibility: hidden;
+  opacity: 0;
   &__checkbox {
     display: none;
   }
@@ -212,5 +213,6 @@
   }
   @media only screen and (max-width: $bp-small) {
     visibility: visible;
+    opacity: 1;
   }
 }

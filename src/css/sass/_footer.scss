@@ -11,4 +11,28 @@ footer {
       width: 100%;
     }
   }
+  p {
+    text-align: center;
+    font-family: $font-display;
+    color: $secondary-text-color;
+    font-style: italic;
+    font-size: 1.2rem;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      -webkit-mask-image: url("../img/solid/paw.svg");
+      mask-image: url("../img/solid/paw.svg");
+      background-color: currentColor;
+      top: 0rem;
+    }
+    &::after {
+      right: -0.5rem;
+    }
+    &::before {
+      left: -0.5rem;
+    }
+  }
 }
