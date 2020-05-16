@@ -70,33 +70,43 @@
       Contacto
     </h3>
     <p>
-        Si quieres ponerte en contacto con nosotros, puedes hacerlo por teléfono al: <b><a href="tel:695229204">TFNO
-          695229204</a></b>
+        Si quieres ponerte en contacto con nosotros, puedes hacerlo por teléfono:
     </p>
-
     <p>
-        Si lo prefieres también puedes enviarnos un email con tus dudas a través de nuestro formulario de contacto:
+        <b><a href="tel:695229204">TFNO 695229204</a></b>
+    </p>
+    <hr />
+    <p>
+        O, si lo prefieres también puedes enviarnos un email con tus dudas a través de nuestro formulario de contacto:
     </p>
 
     <form 
+        class="form"
         name="contact" 
         method="POST" 
         data-netlify-recaptcha="true" 
         data-netlify="true" 
         action="/contacto.html#send"
     >
-        <p>
-          <label>Tú nombre: <input type="text" name="name" /></label>   
-        </p>
-        <p>
-          <label>Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Mensaje: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Enviar Formulario</button>
-        </p>
+    <h4 class="heading-4">Envíanos tus dudas a nuestro Email:</h4>
+    <div class="form__group">
+        <input name="name" type="text" class="form__input" placeholder="Nombre Completo" id="name" required>
+        <label for="name" class="form__label">Nombre Completo</label>
+    </div>
+
+    <div class="form__group">
+        <input name="email" type="email" class="form__input" placeholder="Dirección email" id="email" required>
+        <label for="email" class="form__label">Dirección email</label>
+    </div>
+
+    <div class="form__group">
+        <textarea name="mensaje" class="form__input" placeholder="Pregúntanos lo que quieras" id="mensaje" required></textarea>
+        <label for="mensaje" class="form__label">Dirección email</label>
+    </div>
+
+    <div class="form__group">
+        <button class="btn">Enviar &rarr;</button>
+    </div>
       </form>
   </main>
   <footer>
