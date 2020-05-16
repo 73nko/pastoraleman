@@ -7,6 +7,9 @@
     margin: 2rem 0;
     font-size: 3rem;
     position: relative;
+    @media only screen and (max-width: $bp-small) {
+      text-align: center;
+    }
     &::before {
       content: "";
       position: absolute;
