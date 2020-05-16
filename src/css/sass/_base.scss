@@ -1,7 +1,9 @@
+$color-white: #fff;
+$color-black: #000;
+
 $primary-color-dark: #689f38;
 $primary-color: #8bc34a;
 $primary-color-light: #dcedc8;
-$primary-color-text: #212121;
 $accent-color: #795548;
 $primary-text-color: #212121;
 $secondary-text-color: #757575;
@@ -39,4 +41,20 @@ body {
   color: $primary-text-color;
   font-weight: 300;
   line-height: 1.6;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100vw;
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary-text-color;
+  font-weight: 400;
+  font-family: $font-display;
+  font-size: 2rem;
+  text-shadow: 1px 2px 3px rgba($accent-color, 0.5);
 }

@@ -1,0 +1,25 @@
+.main-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 0 2.5rem;
+  .heading-3 {
+    margin: 2rem 0;
+    font-size: 3rem;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -5rem;
+      width: 3.5rem;
+      height: 3.5rem;
+      -webkit-mask-image: url("../img/solid/paw.svg");
+      mask-image: url("../img/solid/paw.svg");
+      background-color: $accent-color;
+
+      @media only screen and (max-width: $bp-small) {
+        visibility: hidden;
+      }
+    }
+  }
+}

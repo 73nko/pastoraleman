@@ -14,7 +14,7 @@
     />
     <meta name="Robots" content="index, follow" />
     <link
-      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,700|Nunito:300,300i"
       rel="stylesheet"
     />
     <link rel="shortcut icon" type="image/png" href="./img/logo.png" />
@@ -26,10 +26,105 @@
   </head>
 
   <body>
-    <h1 class="heading-1">Prueba</h1>
+    <header class="header">
+      <a href="/" class="logo">
+        <span>Cachorros de pastor Alemán Madrid</span>
+      </a>
+      <div class="title">
+        <h1 class="heading-1">Pastor Alemán Coronales</h1>
+        <h2 class="heading-2--dark">
+          Venta de cachorros de pastor alemán en Madrid
+        </h2>
+      </div>
+      <nav class="desktop">
+        <ul>
+          <li><a href="">Documentación</a></li>
+          <li><a href="">Galería</a></li>
+          <li><a href="">Dónde Estamos</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="mobile navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-    <svg class="">
-      <use xlink:href="img/icons.svg#clock"></use>
-    </svg>
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Documentación</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Galería</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Dónde Estamos</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <h3 class="heading-3">
+        Historia y Origen del Criadero de Pastor Aleman Coronales
+      </h3>
+      <p>
+        Nuestro criadero es una sucesión de la Cuadra Monreal y Alcazar, uno de
+        los pioneros y mejores criadores de España, con línea de belleza, guarda
+        y custodia con el semental y mayor progenitor de la historia de pastor
+        alemán Lork de Valdovin.
+      </p>
+      <p>
+        Nuestros machos sementales Ramse de Cuadra Monreal, hijo de Ron de
+        Cuadra Monreal y Buendo de Cuadra Monreal, nietos de Lork de Valdovín,
+        en los concursos en los que han participado desde cachorros han obtenido
+        los mejores resultados.
+      </p>
+
+      <p>
+        Con el asesoramiento de la Cuadra Monreal y la Cuadra Alcazar,
+        comenzamos a adquirir hembras apropiadas para que naciese el Criadero
+        Coronales, siempre con los criterios necesarios para fomentar una buena
+        crianza.
+      </p>
+
+      <p>
+        El Pastor Alemán tiene unas extraordinarias cualidades, inteligente,
+        ágil, buen olfato y memoria. Es un buen guardián y una de las razas de
+        perros mas populares. <b>TFNO 695229204</b>
+      </p>
+
+      <div class="composition">
+        <img
+          srcset="./img/cachorro-1_small.jpg 300w, ./img/cachorro-1.jpeg 1000w"
+          sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+          alt="Cachorro 1"
+          class="composition__photo composition__photo--p1"
+          src="./img/cachorro-1.jpeg"
+        />
+
+        <img
+          srcset="./img/cachorro-2_small.jpg 300w, ./img/cachorro-2.jpeg 1000w"
+          sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+          alt="Photo 2"
+          class="composition__photo composition__photo--p2"
+          src="./img/cachorro-2.jpeg"
+        />
+      </div>
+    </main>
+    <footer>
+      <img
+        class="numero-perrera"
+        src="./img/numeroRSCE.png"
+        alt="numero de oerrera deoirtiva cam"
+      />
+    </footer>
   </body>
 </html>

@@ -1,0 +1,14 @@
+footer {
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 0 2.5rem;
+  position: relative;
+  text-align: center;
+  .numero-perrera {
+    width: 50%;
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+    }
+  }
+}
