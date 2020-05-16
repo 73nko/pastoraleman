@@ -4,8 +4,8 @@
   "description": "A new Website for Pastor Aleman Coronales webSite",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html src/documentacion.html -d dev --target browser --open",
-    "build": "parcel build src/index.html src/documentacion.html -d dist --target browser"
+    "dev": "parcel src/index.html src/documentacion.html src/donde-estamos.html -d dev --target browser --open",
+    "build": "parcel build src/index.html src/documentacion.html src/donde-estamos.html -d dist --target browser"
   },
   "repository": {
     "type": "git",
