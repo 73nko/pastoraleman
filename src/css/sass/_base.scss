@@ -45,6 +45,22 @@ body {
   height: 100vh;
 }
 
+.bg {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background-color: rgba($divider-color, 0.2);
+  -webkit-mask-image: url("../img/solid/bone.svg");
+  mask-image: url("../img/solid/bone.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
 .container {
   width: 100vw;
   padding: 2rem;
