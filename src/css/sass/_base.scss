@@ -76,37 +76,37 @@ a {
 }
 
 hr {
-    line-height: 1em;
-    position: relative;
-    outline: 0;
-    border: 0;
-    color: black;
-    text-align: center;
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 3rem;
+  opacity: 0.5;
+  &:before {
+    content: "";
+    // use the linear-gradient for the fading effect
+    // use a solid background color for a solid bar
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 2rem;
     height: 3rem;
-    opacity: .5;
-    &:before {
-      content: '';
-      // use the linear-gradient for the fading effect
-      // use a solid background color for a solid bar
-      background: linear-gradient(to right, transparent, #818078, transparent);
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 100%;
-      height: 1px;
-    }
-    &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        width: 2rem;
-        height: 3rem;
-        -webkit-mask-image: url("../img/solid/paw.svg");
-        mask-image: url("../img/solid/paw.svg");
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        -webkit-mask-position: center;
-        mask-position: center;
-        background-color: $primary-color;
-    }
+    -webkit-mask-image: url("../img/solid/paw.svg");
+    mask-image: url("../img/solid/paw.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    background-color: $primary-color;
+  }
 }
