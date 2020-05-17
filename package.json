@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/galeria.html -d dev --target browser --open",
-    "build": "parcel build src/index.html src/documentacion.html src/galeria.html src/donde-estamos.html src/contacto.html src/sitemap.xml -d dist --target browser"
+    "build": "parcel build src/index.html src/documentacion.html src/galeria.html src/donde-estamos.html src/contacto.html src/sitemap.xml src/robots.txt -d dist --target browser"
   },
   "repository": {
     "type": "git",
