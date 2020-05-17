@@ -43,6 +43,8 @@ body {
   line-height: 1.6;
   width: 100vw;
   height: 100vh;
+  margin: 0 auto;
+  max-width: 150rem;
 }
 
 .bg {
@@ -59,11 +61,6 @@ body {
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
   mask-position: center;
-}
-
-.container {
-  width: 100vw;
-  padding: 2rem;
 }
 
 a {
