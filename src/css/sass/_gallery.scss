@@ -158,6 +158,14 @@
         transform: scale(1.5);
       }
     }
+
+    &:nth-child(6) {
+      grid-row: 4;
+      grid-column: 1 / span 2;
+      &.active {
+        transform: scale(1);
+      }
+    }
   }
 }
 
