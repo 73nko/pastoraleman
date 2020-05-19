@@ -1,0 +1,31 @@
+.nuevas-camadas {
+  margin: 3rem auto;
+  width: fit-content;
+  min-width: 50%;
+  padding: 1rem 2rem;
+  border: 3px dashed $warning-color;
+  background-color: $color-white;
+  text-align: center;
+  h2 {
+    font-size: 3rem;
+    color: $primary-color-dark;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1rem;
+      left: -6rem;
+      width: 5rem;
+      height: 5rem;
+      -webkit-mask-image: url("../img/solid/exclamation-circle.svg");
+      mask-image: url("../img/solid/exclamation-circle.svg");
+      background-color: $warning-color;
+    }
+  }
+  span {
+    color: $primary-color-dark;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: $font-display;
+  }
+}
