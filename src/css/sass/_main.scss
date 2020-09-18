@@ -5,6 +5,36 @@
   padding: 3rem;
   border-radius: 4px;
 
+  .banner {
+    border: 1px solid $divider-color;
+    padding: 1.5rem 2rem;
+    border-radius: 4px;
+    box-shadow: rgba(40, 44, 53, 0.3) 0px 1px 24px,
+      rgba(40, 44, 53, 0.3) 0px 2px 8px;
+    text-align: center;
+    transition: all ease 100ms;
+    span {
+      color: $primary-color;
+      font-size: 2.5rem;
+      font-weight: 600;
+      &.note {
+        margin: 0.5rem 0 0 0;
+        text-align: left;
+        display: block;
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: $secondary-text-color;
+      }
+    }
+
+    &:hover {
+      border: 1px solid $primary-color;
+      background-color: lighten($color: $divider-color, $amount: 25%);
+      box-shadow: rgba($primary-color, 0.3) 0px 1px 24px,
+        rgba($primary-color, 0.3) 0px 2px 8px;
+    }
+  }
+
   .heading-3 {
     margin: 2rem 0;
     font-size: 3rem;
