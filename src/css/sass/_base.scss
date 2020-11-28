@@ -22,88 +22,93 @@ $bp-small: 37.5em; // 600px;
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
 
-  @media only screen and (max-width: $bp-largest) {
-    font-size: 50%;
-  }
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
 }
 
 body {
-  font-family: $font-primary;
-  color: $primary-text-color;
-  font-weight: 300;
-  line-height: 1.6;
-  width: 100vw;
-  height: 100vh;
-  margin: 0 auto;
-  max-width: 150rem;
+    font-family: $font-primary;
+    color: $primary-text-color;
+    font-weight: 300;
+    line-height: 1.6;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 150rem;
 }
 
 .bg {
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -30%);
-  background-color: rgba($divider-color, 0.2);
-  -webkit-mask-image: url("../img/solid/bone.svg");
-  mask-image: url("../img/solid/bone.svg");
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-}
-
-a {
-  text-decoration: none;
-  color: $secondary-text-color;
-  font-weight: 400;
-  font-family: $font-display;
-  font-size: 2rem;
-  text-shadow: 1px 2px 3px rgba($accent-color, 0.5);
-}
-
-hr {
-  line-height: 1em;
-  position: relative;
-  outline: 0;
-  border: 0;
-  color: black;
-  text-align: center;
-  height: 3rem;
-  opacity: 0.5;
-  &:before {
-    content: "";
-    // use the linear-gradient for the fading effect
-    // use a solid background color for a solid bar
-    background: linear-gradient(to right, transparent, #818078, transparent);
     position: absolute;
-    left: 0;
+    width: 80%;
+    height: 80%;
     top: 50%;
-    width: 100%;
-    height: 1px;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 2rem;
-    height: 3rem;
-    -webkit-mask-image: url("../img/solid/paw.svg");
-    mask-image: url("../img/solid/paw.svg");
+    left: 50%;
+    transform: translate(-50%, -30%);
+    background-color: rgba($divider-color, 0.2);
+    -webkit-mask-image: url("../img/solid/bone.svg");
+    mask-image: url("../img/solid/bone.svg");
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-position: center;
     mask-position: center;
-    background-color: $primary-color;
-  }
+}
+
+a {
+    text-decoration: none;
+    color: $secondary-text-color;
+    font-weight: 400;
+    font-family: $font-display;
+    font-size: 2rem;
+    text-shadow: 1px 2px 3px rgba($accent-color, 0.5);
+}
+
+hr {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 3rem;
+    opacity: 0.5;
+    &:before {
+        content: "";
+        // use the linear-gradient for the fading effect
+        // use a solid background color for a solid bar
+        background: linear-gradient(
+            to right,
+            transparent,
+            #818078,
+            transparent
+        );
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 2rem;
+        height: 3rem;
+        -webkit-mask-image: url("../img/solid/paw.svg");
+        mask-image: url("../img/solid/paw.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-color: $primary-color;
+    }
 }

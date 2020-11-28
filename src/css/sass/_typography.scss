@@ -1,58 +1,61 @@
 %heading {
-  font-family: $font-display;
-  font-weight: 400;
+    font-family: $font-display;
+    font-weight: 400;
 }
 
 .heading-1 {
-  @extend %heading;
-  font-size: 4.5rem;
-  color: $primary-text-color;
-  line-height: 1;
+    @extend %heading;
+    font-size: 4.5rem;
+    color: $primary-text-color;
+    line-height: 1;
 }
 
 .heading-2 {
-  @extend %heading;
-  font-size: 4rem;
-  font-style: italic;
-  line-height: 1;
+    @extend %heading;
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
 
-  &--light {
-    color: $primary-color-light;
-  }
-  &--dark {
-    color: $primary-text-color;
-  }
+    &--light {
+        color: $primary-color-light;
+    }
+    &--dark {
+        color: $primary-text-color;
+    }
 }
 
 .heading-3 {
-  @extend %heading;
-  font-size: 1.6rem;
-  color: $primary-color;
-  text-transform: uppercase;
+    @extend %heading;
+    font-size: 1.6rem;
+    color: $primary-color;
+    text-transform: uppercase;
 }
 
 .heading-4 {
-  @extend %heading;
-  font-size: 1.9rem;
+    @extend %heading;
+    font-size: 1.9rem;
 
-  &--light {
-    color: $primary-color-light;
-  }
-  &--dark {
-    color: $primary-text-color;
-  }
+    &--light {
+        color: $primary-color-light;
+    }
+    &--dark {
+        color: $primary-text-color;
+    }
 }
 
 p {
-  font-size: 1.4rem;
-  font-family: $font-primary;
-  margin: 1.5rem 0;
-  position: relative;
-  text-align: justify;
-  b {
-    font-size: 2rem;
-    font-weight: 400;
-    font-family: $font-display;
-    color: $primary-color;
-  }
+    font-size: 1.4rem;
+    font-family: $font-primary;
+    margin: 1.5rem 0;
+    position: relative;
+    text-align: justify;
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 2rem;
+    }
+    b {
+        font-size: 2rem;
+        font-weight: 400;
+        font-family: $font-display;
+        color: $primary-color;
+    }
 }
