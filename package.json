@@ -21,7 +21,7 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-sw-precache": "^1.1.2",
-    "sass": "^1.26.5"
+    "sass": "^1.29.0"
   },
   "sw-precache": {
     "maximumFileSizeToCacheInBytes": 10485760
