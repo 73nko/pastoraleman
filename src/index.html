@@ -15,6 +15,7 @@
 
             gtag("config", "G-S4Y8L2SJ3S");
         </script>
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -31,6 +32,11 @@
             href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,700|Nunito:300,300i"
             rel="stylesheet"
         />
+        <link rel="apple-touch-icon" href="./img/logo.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="theme-color" content="#8bc34a" />
+        <link rel="manifest" href="/manifest.webmanifest" />
         <link rel="shortcut icon" type="image/png" href="./img/logo.png" />
         <link rel="stylesheet" href="./css/styles.scss" />
         <title>
@@ -146,6 +152,7 @@
                     alt="Cachorro 1"
                     class="composition__photo composition__photo--p1"
                     src="./img/cachorro-1.jpeg"
+                    loading="lazy"
                 />
 
                 <img
@@ -157,6 +164,7 @@
                     alt="Photo 2"
                     class="composition__photo composition__photo--p2"
                     src="./img/cachorro-2.jpeg"
+                    loading="lazy"
                 />
             </div>
         </main>
@@ -171,5 +179,39 @@
                 reservados.
             </p>
         </footer>
+        <script>
+            const sw = "service-worker.js";
+
+            navigator.serviceWorker
+                .register(sw)
+                .then((registration) => {
+                    registration.onupdatefound = () => {
+                        const installingWorker = registration.installing;
+                        if (installingWorker == null) {
+                            return;
+                        }
+                        installingWorker.onstatechange = () => {
+                            if (installingWorker.state === "installed") {
+                                if (navigator.serviceWorker.controller) {
+                                    console.log(
+                                        "New content is available and will be used when all " +
+                                            "tabs for this page are closed. See https://bit.ly/CRA-PWA.",
+                                    );
+                                } else {
+                                    console.log(
+                                        "Content is cached for offline use.",
+                                    );
+                                }
+                            }
+                        };
+                    };
+                })
+                .catch((error) => {
+                    console.error(
+                        "Error during service worker registration:",
+                        error,
+                    );
+                });
+        </script>
     </body>
 </html>

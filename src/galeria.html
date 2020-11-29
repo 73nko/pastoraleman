@@ -31,6 +31,11 @@
             href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,700|Nunito:300,300i"
             rel="stylesheet"
         />
+        <link rel="apple-touch-icon" href="./img/logo.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="theme-color" content="#8bc34a" />
+        <link rel="manifest" href="/manifest.webmanifest" />
         <link rel="shortcut icon" type="image/png" href="./img/logo.png" />
         <link rel="stylesheet" href="./css/styles.scss" />
         <title>&bull;&bull; Galería | Cachorros de pastor Aleman</title>
@@ -254,5 +259,39 @@
                 e.target.parentNode.classList.toggle("active");
             });
         });
+    </script>
+    <script>
+        const sw = "service-worker.js"; // it is needed because parcel will not recognize this as a file and not precess in its manner
+
+        navigator.serviceWorker
+            .register(sw)
+            .then((registration) => {
+                registration.onupdatefound = () => {
+                    const installingWorker = registration.installing;
+                    if (installingWorker == null) {
+                        return;
+                    }
+                    installingWorker.onstatechange = () => {
+                        if (installingWorker.state === "installed") {
+                            if (navigator.serviceWorker.controller) {
+                                console.log(
+                                    "New content is available and will be used when all " +
+                                        "tabs for this page are closed. See https://bit.ly/CRA-PWA.",
+                                );
+                            } else {
+                                console.log(
+                                    "Content is cached for offline use.",
+                                );
+                            }
+                        }
+                    };
+                };
+            })
+            .catch((error) => {
+                console.error(
+                    "Error during service worker registration:",
+                    error,
+                );
+            });
     </script>
 </html>

@@ -1,2 +1,7 @@
-User-agent: *
-Allow: /
+User-Agent: *
+Disallow: 
+Allow: /index.html
+Allow: /documentacion
+Allow: /galeria
+Allow: /donde-estamos
+Allow: /contacto

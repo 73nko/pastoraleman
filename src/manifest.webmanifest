@@ -1,0 +1,25 @@
+{
+    "short_name": "Pastor Aleman Coronales",
+    "name": "Pastor Aleman Coronales",
+    "icons": [
+        {
+            "src": "img/logo_small.png",
+            "type": "image/x-icon",
+            "sizes": "64x64 32x32 24x24 16x16"
+        },
+        {
+            "src": "img/logo.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "img/logo.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#8bc34a",
+    "background_color": "#ffffff"
+}
