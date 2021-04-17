@@ -1,7 +1,7 @@
 module.exports = {
     mount: {
-        assets: "/",
-        src: "/",
+        "src": "/",
+        "public": "/"
     },
     plugins: [
         ['@snowpack/plugin-sass', { style: 'compressed'}],
@@ -17,7 +17,6 @@ module.exports = {
         ],
     ],
     buildOptions: {
-        out: "../dist",
         clean: true,
         minify: true,
     },
@@ -31,5 +30,5 @@ module.exports = {
         target: "es2020",
         treeshake: true,
         splitting: true,
-      },
+    },
   };
