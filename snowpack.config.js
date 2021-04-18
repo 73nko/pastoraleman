@@ -15,6 +15,16 @@ module.exports = {
               ],
             },
         ],
+        [
+            'snowpack-plugin-resize-images',
+            {
+                '**/img/**': {
+                    webp: {
+                      quality: 90,
+                    },
+                  },
+            }
+        ]
     ],
     buildOptions: {
         clean: true,
