@@ -1,30 +1,30 @@
 {
-  "name": "pastoraleman",
-  "version": "1.0.0",
-  "description": "A new Website for Pastor Aleman Coronales webSite",
-  "main": "index.js",
-  "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/73nko/pastoraleman.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/73nko/pastoraleman/issues"
-  },
-  "homepage": "https://github.com/73nko/pastoraleman#readme",
-  "devDependencies": {
-    "@snowpack/plugin-sass": "^1.4.0",
-    "imagemin-mozjpeg": "^10.0.0",
-    "imagemin-optipng": "^8.0.0",
-    "sharp": "^0.29.3",
-    "snowpack": "^3.8.8",
-    "snowpack-plugin-imagemin": "^1.0.0",
-    "snowpack-plugin-resize-images": "^2.1.6"
-  }
+    "name": "pastoraleman",
+    "version": "1.0.0",
+    "description": "A new Website for Pastor Aleman Coronales webSite",
+    "main": "index.js",
+    "scripts": {
+        "start": "snowpack dev",
+        "build": "snowpack build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/73nko/pastoraleman.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/73nko/pastoraleman/issues"
+    },
+    "homepage": "https://github.com/73nko/pastoraleman#readme",
+    "devDependencies": {
+        "@snowpack/plugin-sass": "^1.4.0",
+        "imagemin-mozjpeg": "^9.0.0",
+        "imagemin-optipng": "^8.0.0",
+        "sharp": "^0.28.1",
+        "snowpack": "^3.3.3",
+        "snowpack-plugin-imagemin": "^1.0.0",
+        "snowpack-plugin-resize-images": "^2.1.6"
+    }
 }
