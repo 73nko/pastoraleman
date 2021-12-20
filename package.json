@@ -20,10 +20,10 @@
   "homepage": "https://github.com/73nko/pastoraleman#readme",
   "devDependencies": {
     "@snowpack/plugin-sass": "^1.4.0",
-    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
     "imagemin-optipng": "^8.0.0",
-    "sharp": "^0.28.1",
-    "snowpack": "^3.3.3",
+    "sharp": "^0.29.3",
+    "snowpack": "^3.8.8",
     "snowpack-plugin-imagemin": "^1.0.0",
     "snowpack-plugin-resize-images": "^2.1.6"
   }
