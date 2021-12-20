@@ -1,8 +1,3 @@
 User-Agent: *
-Index: /
-Allow: /documentacion
-Allow: /galeria
-Allow: /donde-estamos
-Allow: /contacto
 
 Sitemap: https://pastoralemancoronales.es/sitemap.xml
