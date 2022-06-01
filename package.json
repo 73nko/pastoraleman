@@ -22,7 +22,7 @@
         "@snowpack/plugin-sass": "^1.4.0",
         "imagemin-mozjpeg": "^9.0.0",
         "imagemin-optipng": "^8.0.0",
-        "sharp": "^0.28.1",
+        "sharp": "^0.30.5",
         "snowpack": "^3.3.3",
         "snowpack-plugin-imagemin": "^1.0.0",
         "snowpack-plugin-resize-images": "^2.1.6"
