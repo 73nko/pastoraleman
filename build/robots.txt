@@ -1,0 +1,3 @@
+User-Agent: *
+
+Sitemap: https://pastoralemancoronales.es/sitemap.xml
