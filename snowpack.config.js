@@ -1,28 +1,18 @@
 module.exports = {
   mount: {
-    src: "/",
-    public: "/",
+    src: '/',
+    public: '/',
   },
   plugins: [
-    ["@snowpack/plugin-sass", { style: "compressed" }],
+    ['@snowpack/plugin-sass', { style: 'compressed' }],
     [
-      "snowpack-plugin-imagemin",
+      'snowpack-plugin-imagemin',
       {
-        include: ["**/*.jpg", "**/*.png"],
+        include: ['**/*.jpg', '**/*.png'],
         plugins: [
-          require("imagemin-mozjpeg")({ quality: 80, progressive: true }),
-          require("imagemin-optipng")({ optimizationLevel: 7 }),
+          require('imagemin-mozjpeg')({ quality: 90, progressive: true }),
+          require('imagemin-optipng')({ optimizationLevel: 7 }),
         ],
-      },
-    ],
-    [
-      "snowpack-plugin-resize-images",
-      {
-        "**/img/**": {
-          webp: {
-            quality: 80,
-          },
-        },
       },
     ],
   ],
@@ -30,13 +20,13 @@ module.exports = {
     clean: true,
     minify: true,
   },
-  exclude: ["**/node_modules/**/*"],
+  exclude: ['**/node_modules/**/*'],
   optimize: {
     /* Use built-in esbuild bundling for build */
     bundle: true,
     minify: true,
-    target: "es2020",
+    target: 'es2020',
     treeshake: true,
     splitting: true,
   },
-};
+}
